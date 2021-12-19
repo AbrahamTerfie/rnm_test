@@ -3,12 +3,13 @@ import { Row, Button, Col } from "reactstrap";
 import SearchBar from "../Components/SearchBar";
 import { BsFillMoonFill } from "react-icons/bs";
 import { ThemeContext } from "../Context/themeContext";
+import Card from "../Components/Card";
 export default function Homepage() {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <div style={theme} >
-      <Row className="justify-content-center  align-items-center headerRow ">
+    <div style={theme}>
+      <Row className=" align-items-center headerRow ">
         <Col sm={12} lg={3}>
           {/* display image */}
           <img
@@ -22,14 +23,21 @@ export default function Homepage() {
         </Col>
         <Col sm={12} lg={3}>
           <div className="themeToggle">
-            <Button onClick={ toggleTheme} outline>
+            <Button onClick={toggleTheme} outline>
               <BsFillMoonFill className="m-2 " size="2em" />
               darkmode
             </Button>
           </div>
         </Col>
       </Row>
-      <Row>main component</Row>
+      <div className=" cardContainer">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </div>
   );
 }

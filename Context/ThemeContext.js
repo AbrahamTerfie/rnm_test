@@ -8,6 +8,7 @@ export function ThemeProvider({ children }) {
       background: "#fff",
       color: "#000",
       button: "#000",
+    //   height:"100vh",
     },
     dark: {
       background: "#000",

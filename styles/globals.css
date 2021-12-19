@@ -1,5 +1,6 @@
 * {
   /* background-color: black; */
+
 }
 
 html,
@@ -33,11 +34,7 @@ a {
 .searchBar {
   width: 100%;
   border-radius: 0.8em;
-  /* border: 1px solid #222; */
   padding: 0.8em;
-  /* background-color: lightgray; */
-  /* color: white; */
-  /* outline: none; */
 }
 .searchContainer {
   display: flex;
@@ -49,4 +46,70 @@ a {
   justify-content: flex-end;
   align-items: center;
   margin-right: 3em;
+}
+.card {
+  /* border: 1px solid #222; */
+  border-radius: 20px;
+  width: 30em;
+  height: 12em;
+  margin: 1em;
+  padding: 1.5em;
+}
+.card :hover {
+  
+  transition: all 0.2s ease;
+  transform: scale(1.02);
+}
+.card img {
+  border-radius: 5em;
+  width: 6em;
+  height: 8em;
+  object-fit: cover;
+  margin: 0.7em;
+}
+.cardContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 3em;
+  /* padding: 1em; */
+}
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+.cardBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 1em; */
+
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+.modaltitleContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+.modaltitleContainer button{
+  margin-left: 10em; 
+}
+.modalTitle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
 }
