@@ -1,10 +1,11 @@
 import React from "react";
-import { BsFillMoonFill } from "react-icons/bs";
+import Theme from "../Context/themeContext";
 export default function ThemeToggle() {
+  const theme = useContext(Theme);
+
+  const [themeState, setThemeState] = useState(theme.light);
+
   return (
-    <div className="themeToggle">
-      <BsFillMoonFill className="m-2 "  size="2em" />
-      darkmode
-    </div>
+    
   );
 }

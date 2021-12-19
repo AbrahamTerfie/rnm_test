@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { Row, Button, Col } from "reactstrap";
 import SearchBar from "../Components/SearchBar";
-import ThemeToggle from "../Components/ThemeToggle";
+import { BsFillMoonFill } from "react-icons/bs";
+import { ThemeContext } from "../Context/themeContext";
 export default function Homepage() {
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
   return (
-    <div>
+    <div style={theme} >
       <Row className="justify-content-center  align-items-center headerRow ">
         <Col sm={12} lg={3}>
           {/* display image */}
@@ -18,7 +21,12 @@ export default function Homepage() {
           <SearchBar />
         </Col>
         <Col sm={12} lg={3}>
-          <ThemeToggle />
+          <div className="themeToggle">
+            <Button onClick={ toggleTheme} outline>
+              <BsFillMoonFill className="m-2 " size="2em" />
+              darkmode
+            </Button>
+          </div>
         </Col>
       </Row>
       <Row>main component</Row>
