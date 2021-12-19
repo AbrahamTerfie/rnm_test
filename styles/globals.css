@@ -1,3 +1,7 @@
+* {
+  /* background-color: black; */
+}
+
 html,
 body {
   padding: 0;
@@ -13,4 +17,36 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.headerRow {
+  margin-bottom: 3em;
+  padding: 1em;
+  border-bottom: 1px solid #222;
+  /* background-color:lightgray; */
+}
+.headerRow img {
+  width: fit-content;
+  height: min-content;
+  margin-right: 1em;
+}
+.searchBar {
+  width: 100%;
+  border-radius: 0.8em;
+  /* border: 1px solid #222; */
+  padding: 0.8em;
+  /* background-color: lightgray; */
+  /* color: white; */
+  /* outline: none; */
+}
+.searchContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.themeToggle {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 3em;
 }
